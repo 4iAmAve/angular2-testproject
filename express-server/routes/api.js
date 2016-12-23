@@ -5,7 +5,7 @@ const router = express.Router();
 
 // MongoDB URL from the docker-compose file
 // const dbHost = 'mongodb://localhost/local-dev';
-const dbHost = 'mongodb://database/mean-docker';
+const dbHost = 'mongodb://database/angular2-testproject';
 
 // Connect to mongodb
 mongoose.connect(dbHost);
@@ -19,7 +19,6 @@ const messageSchema = new mongoose.Schema({
 });
 
 // create mongoose model
-const User = mongoose.model('User', userSchema);
 const Message = mongoose.model('Message', messageSchema);
 
 /* GET api listing. */

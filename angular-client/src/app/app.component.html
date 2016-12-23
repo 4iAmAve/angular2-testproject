@@ -9,13 +9,13 @@
     <form class="form-inline">
       <div class="form-group">
         <label for="number">Fork lift no.</label>
-        <input type="text" class="form-control" id="number" #id>
+        <input type="text" class="form-control" id="number" #number>
       </div>
       <div class="form-group">
         <label for="driverID">Driver ID</label>
-        <input type="number" class="form-control" id="driverID" #driver>
+        <input type="text" class="form-control" id="driverID" #driverID>
       </div>
-      <button type="button" (click)="addMessage(id.value, driverID.value)" class="btn btn-primary">Add Message</button>
+      <button type="button" (click)="addMessage(number.value, driverID.value)" class="btn btn-primary">Add Message</button>
     </form>
   </div>
   <div [style.margin-top.px]="10" class="row">
