@@ -8,12 +8,12 @@
     <h3>Add new message</h3>
     <form class="form-inline">
       <div class="form-group">
-        <label for="name">Fork lift no.</label>
-        <input type="text" class="form-control" id="name" #id>
+        <label for="number">Fork lift no.</label>
+        <input type="text" class="form-control" id="number" #id>
       </div>
       <div class="form-group">
-        <label for="age">Driver ID</label>
-        <input type="number" class="form-control" id="age" #driver>
+        <label for="driverID">Driver ID</label>
+        <input type="number" class="form-control" id="driverID" #driver>
       </div>
       <button type="button" (click)="addMessage(id.value, driverID.value)" class="btn btn-primary">Add Message</button>
     </form>
